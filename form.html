@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="Stylesheet" href="form.css">
+</head>
+<body>
+    <form>
+            <div class="row container mb-4">
+                <div class="col-1"><label for="firstname">FirstName</label></div>
+                <div class="col"><input type="text"; placeholder="Enter the firstName"; id="firstname"></div>
+                
+                
+            </div>
+            <div class="row container mb-4">
+                <div class="col-1"><label for="lastname">LastName</label></div>
+                <div class="col"><input type="text"; placeholder="Enter the LastName"; id="lastname"></div>
+                
+                
+
+            </div>
+            <div class="row container mb-4">
+                <div class="col-1"><label for="address">Address</label></div>
+                <div class="col"><input type="text"; placeholder="Enter the address"; id="address"></div>
+                
+                
+
+            </div>
+            <div class="row container mb-4">
+                <div class="col-1"><label for="pincode">PinCode</label></div>
+                <div class="col"><input type="number"; placeholder="Enter the pincode"; id="pincode"></div>
+                
+                
+
+            </div>
+            
+            <fieldset>
+                    <legend> Choice of Food (atleast select two)</legend>
+                    <div ><input type="checkbox"  id="briyani" name="food" value="Briyani">
+                    <label for="briyani"> Briyani</label>
+                    </div>
+                    <div >
+                        <input type="checkbox"  id="ice" name="food" value="Icecream">
+                        <label for="ice"> Icecream</label>
+
+                    </div>
+                    <div >
+                        <input type="checkbox"  id="fruit" name="food" value="Fruits">
+                        <label for="fruit"> Fruits</label>
+
+                    </div>
+                    <div >
+                        <input type="checkbox" id="veg" name="food" value="Briyani">
+                        <label for="veg"> VegRice</label>
+
+                    </div>
+                    <div >
+                        <input type="checkbox"  id="cool" name="food" value="Briyani">
+                        <label for="cool">CoolDrinks</label>
+                    </div>
+
+            </fieldset>
+
+        <div class="row-1 mb-10">
+            <button type="submit" id="button" onclick="table1()">submit</button>
+        </div>
+      
+    
+    </form>
+    <div class="row ">
+        <table id="tbl" class="table">
+            <thead >
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">FirstName</th>
+                <th scope="col">LastName</th>
+                <th scope="col">Address</th>
+                <th scope="col">Pincode</th>
+                <th scope="col">Choosen food items</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+            
+          </table>
+    </div>
+    <div>
+        <span id="notvalid"> </span>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
